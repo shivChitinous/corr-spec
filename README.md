@@ -7,4 +7,3 @@ Parameters that can be played around with:
 
 1. N (Number of particles)
 2. D (Diffusion coefficient of the particles)
-3. T (Time for which the video is recorded)
