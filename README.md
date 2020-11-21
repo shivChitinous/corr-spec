@@ -4,6 +4,6 @@ Using this, I calculate autocorrelation functions of pixels in this FOV to under
 
 Parameters that can be played around with:
 
-N (Number of particles)
-Df (Diffusion coefficient of the particles)
-T (Time for which the video is recorded)
+1. `N` (Number of particles)
+2. `Df` (Diffusion coefficient of the particles)
+3. `T` (Time for which the video is recorded)
