@@ -1,5 +1,4 @@
 # corr-spec
-#### [<sup>GitHub</sup>](https://github.com/shivChitinous/corr-spec)
 
 I simulate 2D diffusion of N particles on a grid to understand Fluorescence Correlation Spectroscopy (FCS).
 
@@ -9,3 +8,5 @@ Parameters that can be played around with:
 
 1. N (Number of particles)
 2. D (Diffusion coefficient of the particles)
+
+#### [<sup>GitHub</sup>](https://github.com/shivChitinous/corr-spec)
