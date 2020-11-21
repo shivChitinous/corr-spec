@@ -1,4 +1,6 @@
 # corr-spec
+#### [<sup>GitHub</sup>](https://github.com/shivChitinous/corr-spec)
+
 I simulate 2D diffusion of N particles on a grid to understand Fluorescence Correlation Spectroscopy (FCS).
 
 [**Check it out here!**](https://shivchitinous.github.io/corr-spec/fcs)
