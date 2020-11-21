@@ -9125,15 +9125,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box 
+/* This file is a compatability layer.  It allows the usage of flexible box
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this 
+`Modern browsers` comments below).  Browsers that are known to implement this
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+ 
+    Internet Explorer 11+
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -12515,7 +12515,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for 
+  /* This injects handle bars (a short, wide = symbol) for
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -13100,15 +13100,9 @@ div#notebook {
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container">
-      
 
 
 
-  <div class="cell text_cell">
-    <button class="js-nbinteract-widget">
-      Loading widgets...
-    </button>
-  </div>
 
 
 
@@ -13120,7 +13114,7 @@ div#notebook {
 </div>
 </div>
 
-  
+
 
   <div class="
       cell border-box-sizing code_cell rendered">
@@ -13154,7 +13148,7 @@ div#notebook {
 </div>
 </div>
 
-  
+
 
   <div class="nbinteract-hide_in
       cell border-box-sizing code_cell rendered">
@@ -13179,7 +13173,7 @@ div#notebook {
 </div>
 </div>
 
-  
+
 
   <div class="
       cell border-box-sizing code_cell rendered">
@@ -13196,16 +13190,16 @@ div#notebook {
             <span class="n">SNr</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="c1">#signal to noise</span>
             <span class="n">bkg</span><span class="o">=</span><span class="mi">10</span> <span class="c1">#background noise</span>
            <span class="p">):</span>
-    
+
     <span class="c1">#calibrating SI to pixels and frames:</span>
     <span class="n">T</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">T</span><span class="o">*</span><span class="n">fr</span><span class="p">)</span> <span class="c1">#T is now number of frames</span>
     <span class="n">B</span> <span class="o">=</span> <span class="n">B</span><span class="o">*</span><span class="mf">1e3</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">scale_true</span><span class="p">)</span> <span class="c1">#B is now box half width in number of pixels</span>
     <span class="n">Df</span> <span class="o">=</span> <span class="n">Df</span><span class="o">*</span><span class="p">((</span><span class="mf">1e3</span><span class="o">/</span><span class="n">scale_true</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="n">fr</span> <span class="c1">#Df is now in pixel^2 per frame</span>
-    
+
     <span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="n">N</span><span class="p">,</span><span class="n">T</span><span class="p">)</span><span class="o">-</span><span class="mf">0.5</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span><span class="o">*</span><span class="n">B</span> <span class="c1">#uniformly distribute the particles at t=0</span>
     <span class="n">y</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="n">N</span><span class="p">,</span><span class="n">T</span><span class="p">)</span><span class="o">-</span><span class="mf">0.5</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span><span class="o">*</span><span class="n">B</span>
     <span class="n">vid</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="n">T</span><span class="p">])</span>
-    
+
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">T</span><span class="p">):</span>
         <span class="n">x</span><span class="p">[:,</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span><span class="p">[:,</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">Df</span><span class="p">),</span> <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">N</span><span class="p">)))</span> <span class="c1">#random walk</span>
         <span class="n">y</span><span class="p">[:,</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">y</span><span class="p">[:,</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">Df</span><span class="p">),</span> <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">N</span><span class="p">)))</span>
@@ -13244,7 +13238,7 @@ div#notebook {
 </div>
 </div>
 
-  
+
 
   <div class="
       cell border-box-sizing code_cell rendered">
@@ -13263,7 +13257,7 @@ div#notebook {
 
   </div>
 
-  
+
 
   <div class="
       cell border-box-sizing code_cell rendered">
@@ -13280,7 +13274,7 @@ div#notebook {
 
   </div>
 
-  
+
 
   <div class="nbinteract-hide_in
       cell border-box-sizing code_cell rendered">
@@ -13303,7 +13297,7 @@ div#notebook {
 
   </div>
 
-  
+
 
   <div class="nbinteract-hide_in
       cell border-box-sizing code_cell rendered">
@@ -13327,7 +13321,7 @@ div#notebook {
 
 <div class="output_area">
 
-    
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -13563,7 +13557,7 @@ input[type=range].anim-slider {
     var slider_id = "_anim_slider8b879511bd1948eb851f7782149338e8";
     var loop_select_id = "_anim_loop_select8b879511bd1948eb851f7782149338e8";
     var frames = new Array(100);
-    
+
   frames[0] = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUQAAAFECAYAAABf6kfGAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz\
 AAALEgAACxIB0t1+/AAAADh0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uMy4yLjIsIGh0\
 dHA6Ly9tYXRwbG90bGliLm9yZy+WH4yJAAANZElEQVR4nO3dX2jVdR/A8c82/07TYRn9ISIjo7uw\
@@ -20073,7 +20067,7 @@ RIAkiABJEAGSIAIkQQRIggiQBBEgCSJA+h9ESPU3C/E9MAAAAABJRU5ErkJggg==\
 </div>
 </div>
 
-  
+
 
   <div class="
       cell border-box-sizing code_cell rendered">
@@ -20090,7 +20084,7 @@ RIAkiABJEAGSIAIkQQRIggiQBBEgCSJA+h9ESPU3C/E9MAAAAABJRU5ErkJggg==\
 
   </div>
 
-  
+
 
   <div class="
       cell border-box-sizing code_cell rendered">
@@ -20114,7 +20108,7 @@ RIAkiABJEAGSIAIkQQRIggiQBBEgCSJA+h9ESPU3C/E9MAAAAABJRU5ErkJggg==\
 </div>
 </div>
 
-  
+
 
   <div class="
       cell border-box-sizing code_cell rendered">
@@ -20135,7 +20129,7 @@ RIAkiABJEAGSIAIkQQRIggiQBBEgCSJA+h9ESPU3C/E9MAAAAABJRU5ErkJggg==\
 
 <div class="output_area">
 
-    
+
 
 
 
@@ -20159,7 +20153,7 @@ RIAkiABJEAGSIAIkQQRIggiQBBEgCSJA+h9ESPU3C/E9MAAAAABJRU5ErkJggg==\
 </div>
 </div>
 
-  
+
 
   <div class="
       cell border-box-sizing code_cell rendered">
@@ -20185,7 +20179,7 @@ RIAkiABJEAGSIAIkQQRIggiQBBEgCSJA+h9ESPU3C/E9MAAAAABJRU5ErkJggg==\
 </div>
 </div>
 
-  
+
 
   <div class="nbinteract-hide_in
       cell border-box-sizing code_cell rendered">
@@ -20212,7 +20206,7 @@ RIAkiABJEAGSIAIkQQRIggiQBBEgCSJA+h9ESPU3C/E9MAAAAABJRU5ErkJggg==\
 
 <div class="output_area">
 
-    
+
 
 
 
@@ -20235,7 +20229,7 @@ RIAkiABJEAGSIAIkQQRIggiQBBEgCSJA+h9ESPU3C/E9MAAAAABJRU5ErkJggg==\
 </div>
 </div>
 
-  
+
 
   <div class="nbinteract-hide_in
       cell border-box-sizing code_cell rendered">
@@ -20271,7 +20265,7 @@ RIAkiABJEAGSIAIkQQRIggiQBBEgCSJA+h9ESPU3C/E9MAAAAABJRU5ErkJggg==\
 
 <div class="output_area">
 
-    
+
 
 
 
@@ -20301,7 +20295,7 @@ RIAkiABJEAGSIAIkQQRIggiQBBEgCSJA+h9ESPU3C/E9MAAAAABJRU5ErkJggg==\
 </div>
 </div>
 
-  
+
 
   <div class="nbinteract-hide_in
       cell border-box-sizing code_cell rendered">
@@ -20339,7 +20333,7 @@ RIAkiABJEAGSIAIkQQRIggiQBBEgCSJA+h9ESPU3C/E9MAAAAABJRU5ErkJggg==\
 
 <div class="output_area">
 
-    
+
 
 
 
