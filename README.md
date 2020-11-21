@@ -1,5 +1,5 @@
 # corr-spec
-I simulate 2D diffusion of N particles on a grid and generate videos of the diffusing particles to understand the basics of Fluorescence Correlation Spectroscopy (FCS).
+I simulate 2D diffusion of N particles on a grid to understand Fluorescence Correlation Spectroscopy (FCS).
 
 [**Check it out here!**](https://shivchitinous.github.io/corr-spec/fcs)
 
