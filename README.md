@@ -10,7 +10,7 @@ Parameters that can be played around with:
 2. D (Diffusion coefficient of the particles)
 
 References:
-1. [C++ Model. *Heinemann, Vogel and Schwille, 2013*](https://github.com/FabianHeinemann/simulated_2d_diffusion)
+1. [C++ Model. *Heinemann, Vogel and Schwille, 2013.*](https://github.com/FabianHeinemann/simulated_2d_diffusion)
 2. [Simulating fluorescence images of point particles. *Raghuveer Parthasarathy's image analysis course.*](https://github.com/shivChitinous/image-annals)
 3. [Docs for multipletau](https://multipletau.readthedocs.io/en/latest/)
 4. [Thorsten Wohland's interactive applet on FCS](https://www.dbs.nus.edu.sg/lab/BFL/confocal_fcs_cdf.html)
