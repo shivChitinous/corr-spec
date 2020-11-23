@@ -15,4 +15,4 @@ Parameters that can be played around with:
 3. [Docs for `multipletau`.](https://multipletau.readthedocs.io/en/latest/)
 4. [Thorsten Wohland's interactive applet on FCS.](https://www.dbs.nus.edu.sg/lab/BFL/confocal_fcs_cdf.html)
 
-#### [<sup>GitHub</sup>](https://github.com/shivChitinous/corr-spec)
+### [<sup>GitHub</sup>](https://github.com/shivChitinous/corr-spec)
